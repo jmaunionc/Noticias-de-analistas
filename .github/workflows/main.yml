@@ -2,8 +2,9 @@ name: Rastrear Analistas Financieros
 
 on:
   schedule:
-    # Se ejecuta de lunes a viernes a las 07:00 AM UTC
+    # Se ejecuta de lunes a viernes a las 07:00 AM UTC (ajusta la hora si lo prefieres)
     - cron: '0 7 * * 1-5'
+  # Permite ejecutarlo manualmente desde la pestaña Actions cuando quieras probarlo
   workflow_dispatch:
 
 jobs:
